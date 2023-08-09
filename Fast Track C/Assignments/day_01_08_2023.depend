@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1691042694 source:d:\231039015\day_01_08_2023\practice_problems.c
+	<math.h>
+	"practice_problems.h"
+	<stdbool.h>
+	<string.h>
+	<stdio.h>
+	<assert.h>
+
+1691138899 source:d:\231039015\day_01_08_2023\main.c
+	<stdio.h>
+	<stdlib.h>
+	"practice_problems.h"
+	<assert.h>
+	<math.h>
+
+1691139393 d:\231039015\day_01_08_2023\practice_problems.h
+	<stdint.h>
+
