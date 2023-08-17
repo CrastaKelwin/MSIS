@@ -11,7 +11,7 @@ SplitArray *SplitArrayTo_N_Parts(Array *array, int16_t no_of_splits)
     }
     int32_t min_split_size = array->current_size / no_of_splits;
     SplitArray *sp_arr = malloc(sizeof(SplitArray));
-    sp_arr->array_ptr = malloc(sizeof(Array)*no_of_splits);
+    sp_arr->array_ptr = malloc(sizeof(Array *)*no_of_splits);
     if (sp_arr == NULL)
     {
         return NULL;
