@@ -59,7 +59,7 @@ class TestEIS {
                     }
                     break;
                 case 3:
-                    System.out.println("Enter Employee ID to hike");
+                    System.out.println("Enter Employee ID to Display");
                     int tempid = sc.nextInt();
                     tempid =Employee.searchEmployeeByID(employees, tempid);
                     if (tempid>=0) {

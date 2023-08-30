@@ -15,7 +15,7 @@ class Book {
         this.title = title;
         this.publisher = publisher;
         this.inStock = inStock;
-        this.title = title;
+        this.price = price;
     }
 
     public void setDetails(String author, String title, double price, String publisher, int inStock) {
@@ -36,7 +36,7 @@ class Book {
 
     public static int searchBookByAuthor(Book[] books, String author) {
         for (int i = 0; i < books.length; i++) {
-            if (books[i].author == author) {
+            if (books[i].author.equalsIgnoreCase(author)) {
                 return i;
             }
         }
@@ -45,10 +45,28 @@ class Book {
 
     public static int searchBookByTitle(Book[] books, String title) {
         for (int i = 0; i < books.length; i++) {
-            if (books[i].title == title) {
-                return true;
+            if (books[i].title.equalsIgnoreCase(title)) {
+                return i;
             }
         }
         return -1;
+    }
+    public double getPrice()
+    {
+        return this.price;
+    }
+
+    public int getStock()
+    {
+        return this.inStock;
+    }
+    public Boolean isAuthorEqual(String author)
+    {
+        return this.author.equalsIgnoreCase(author);
+    }
+
+    public Boolean isTitleEqual(String title)
+    {
+        return this.title.equalsIgnoreCase(title);
     }
 }
