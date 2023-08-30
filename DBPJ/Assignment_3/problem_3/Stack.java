@@ -1,6 +1,6 @@
 class Stack {
-    private int size;
-    private int[] stack;
+    private int index;
+    private int stack[];
 
     // default Constructor
     Stack() {
@@ -8,32 +8,29 @@ class Stack {
     }
 
     Stack(int size) {
-        this.size = size;
+        this.stack = new int[size];
     }
-    public void displayDetails() {
-        for (int index = 0; index < stack.length; index++) {
-            System.out.println("ID\t\t:" + this.empID);
-            
+
+    public void display() {
+        for (int index = 0; index < this.index; index++) {
+            System.out.println("i : " + index + ", data : "+ this.stack[index]);
         }
     }
 
-    public static int searchEmployeeByID(Employee[] emp, int ID) {
-        for (int i = 0; i < emp.length; i++) {
-            if (emp[i].empID == ID) {
-                return i;
-            }
+    public Boolean push(int data) {
+        if (this.stack.length == index) {
+            return false;
+        }
+        this.stack[this.index] = data;
+        this.index++;
+        return true;
+    }
+
+    public int pop() {
+        if (this.index > 0) {
+            this.index--;
+            return this.stack[this.index];
         }
         return -1;
-    }
-
-    public Boolean isIDEqual(int ID) {
-        if (this.empID == ID) {
-            return true;
-        }
-        return false;
-    }
-
-    public void incrementSalary(double percent) {
-        this.empSalary = this.empSalary * (1 + (percent / 100));
     }
 }
