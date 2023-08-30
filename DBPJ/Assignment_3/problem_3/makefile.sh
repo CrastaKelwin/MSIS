@@ -2,6 +2,6 @@
 
 javac *.java
 
-java TestEIS
+java TestStack
 
 rm *.class
