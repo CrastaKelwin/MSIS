@@ -1,0 +1,3 @@
+1. A dating site was launched to find the right mate, users can browse the profile based on age gender and occupation when uses views the profiles for the second time profiles are displayed in order of last viewed profiles define required deta structure carry out operations to launch the above application. deallocate memory before exiting The program and use assertions to test the functionalities.
+
+Solution in Progress
