@@ -283,7 +283,6 @@ RetCode MergeList(List *list_1, List *list_2)
     return kRetCodeBadParam;
 }
 
-//pending 
 List *SpiltList(List *list, int split_index)
 {
     if (list)
@@ -291,10 +290,19 @@ List *SpiltList(List *list, int split_index)
         if (list->count > split_index && split_index > 0)
         {
             Node *temp = list->head;
-            for (int i = 0; i < split_index; i++)
+            List *new_list = InitialiseList();
+            for (int i = 0; i < split_index-1; i++)
             {
                 temp = temp->next;
             }
+            new_list->head = temp->next;
+            new_list->tail = list->tail;
+            new_list->count = list->count - split_index;
+            temp->next = NULL;
+            list->tail = temp;
+            list->count = split_index;
+            return new_list;
         }
     }
+    return NULL;
 }
