@@ -5,7 +5,7 @@ void SelectionSort(int *array, int size)
     for (int i = 0; i < size - 1; i++)
     {
         int min_index = i;
-        for (int j = i; j < size; j++)
+        for (int j = i + 1; j < size; j++)
         {
             if (array[min_index] > array[j])
             {
