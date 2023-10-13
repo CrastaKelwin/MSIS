@@ -12,6 +12,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <pthread.h>
+#include <stdlib.h>
 void* f1(void*);
 void* f2(void*);
 void* f3(void*);
