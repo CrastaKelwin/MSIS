@@ -68,6 +68,7 @@
 *.sfr
 
 # Miscellaneous
+*.bak
 *.tra
 *.bin
 *.fed
