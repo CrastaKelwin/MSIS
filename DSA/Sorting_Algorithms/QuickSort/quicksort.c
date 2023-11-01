@@ -10,24 +10,25 @@ void swap(int *a, int *b) {
 }
 
 // function to find the partition position
-int partition(int array[], int lb, int ub) {
+int partition(int array[], int low, int high) {
     // select the rightmost element as pivot
-    int pivot = array[ub];
-    while (lb <= ub) {
-        while (array[lb] < pivot) {
+    int lb = low;
+    int ub = high;
+    int pivot = array[lb];
+    while (lb < ub) {
+        while (array[lb] <= pivot) {
             lb++;
         }
         while (array[ub] > pivot) {
             ub--;
         }
-        if (lb <= ub) {
+        if (lb < ub) {
             swap(&array[lb], &array[ub]);
-            lb++;
-            ub--;
         }
     }
+    swap(&array[low], &array[ub]);
     // return the partition point
-    return lb;
+    return ub;
 }
 
 void quickSort(int array[], int low, int high) {
