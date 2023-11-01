@@ -1,3 +1,5 @@
+// Quick sort in C
+
 #include <stdio.h>
 
 // function to swap elements
@@ -10,7 +12,7 @@ void swap(int *a, int *b) {
 // function to find the partition position
 int partition(int array[], int lb, int ub) {
     // select the rightmost element as pivot
-    int pivot = array[lb];
+    int pivot = array[ub];
     while (lb <= ub) {
         while (array[lb] < pivot) {
             lb++;
