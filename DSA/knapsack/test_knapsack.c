@@ -7,7 +7,7 @@ void main(){
     KnapsackAddElement(24,6);
     KnapsackAddElement(21,6);
     KnapSackPrintElements();
-    ResultElement *res =KnapsackSolution(19);
+    ResultElement *res =KnapsackSolution(18);
     KnapSackPrintResult(res);
 
 }
