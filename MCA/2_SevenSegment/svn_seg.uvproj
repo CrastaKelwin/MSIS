@@ -44,7 +44,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\</OutputDirectory>
-          <OutputName>prg_1</OutputName>
+          <OutputName>svn_seg</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -409,12 +409,12 @@
             <File>
               <FileName>pll.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\pll\pll.c</FilePath>
+              <FilePath>..\pll\pll.c</FilePath>
             </File>
             <File>
               <FileName>pll.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\pll\pll.h</FilePath>
+              <FilePath>..\pll\pll.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -424,12 +424,22 @@
             <File>
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\timer\timer.c</FilePath>
+              <FilePath>..\timer\timer.c</FilePath>
             </File>
             <File>
               <FileName>timer.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\timer\timer.h</FilePath>
+              <FilePath>..\timer\timer.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>general</GroupName>
+          <Files>
+            <File>
+              <FileName>bit_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\general\bit_config.h</FilePath>
             </File>
           </Files>
         </Group>
