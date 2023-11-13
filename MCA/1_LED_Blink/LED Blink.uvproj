@@ -413,6 +413,36 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>pll</GroupName>
+          <Files>
+            <File>
+              <FileName>pll.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\pll\pll.c</FilePath>
+            </File>
+            <File>
+              <FileName>pll.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\pll\pll.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>timer</GroupName>
+          <Files>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\timer\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\timer\timer.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
