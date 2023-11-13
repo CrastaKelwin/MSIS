@@ -2,6 +2,5 @@
 1. To demonstrate the usage of the various shared memory system calls- WAP which creates a shared memory segment of length 100 bytes and writes 'A' to 'Z' to it. Next, let the same program access the segment area and display its contents to the screen (all 100 bytes).Let the program next convert the case of the alphabets in the segment to lowercase. Finally let the program access the same area and display the segment contents once again to the screen. Observe the output.
 2. Let a parent process create a segment of adequate length and write 0 to 9 as well as 'a' to 'z' to it.Next, let the parent fork a child.Let the child increment all the integers by a value 100. Also let it convert all the characters to upper case. Once the child
 completes, let the parent access the shared area and display their contents to the screen.
-3. Let a parent process create a segment of length 2k and write n strings to the area. Let the value of n be passed as a commandline argument. Next, let the parent fork a child.Let the child capitalise the first character of each string.Once the child completes let the
-parent access the shared area and display their contents to the screen.
+3. Let a parent process create a segment of length 2k and write n strings to the area. Let the value of n be passed as a commandline argument. Next, let the parent fork a child.Let the child capitalise the first character of each string.Once the child completes let the parent access the shared area and display their contents to the screen.
 ***

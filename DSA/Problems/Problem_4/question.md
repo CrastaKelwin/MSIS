@@ -1,0 +1,1 @@
+1. In a place X there is a auditorium for booking, customers can book the aud for full day, ot till noon or for only evening, the full day charges 75000, for noon 50000, for evening 30000 allow customers to book the auditorium ensure no 2 customers will book the same slot on same date
