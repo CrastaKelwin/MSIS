@@ -403,6 +403,16 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>External</GroupName>
+          <Files>
+            <File>
+              <FileName>bit_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\general\bit_config.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>

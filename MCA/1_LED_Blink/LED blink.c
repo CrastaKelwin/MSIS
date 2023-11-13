@@ -15,9 +15,8 @@ void delay()
 {
 	int i = 0, j = 0;
 	for (i = 0; i < 10000; i++)
-		for (j = 0; j < 1000; j++)
-		{
-		}
+	{
+	}
 }
 
 int main(void)
@@ -30,7 +29,6 @@ int main(void)
 	{
 		// Set Port P0.0 - P0.7 as HIGH
 		SET_REG_BITS(IO0SET, 0, 7); //  Expands to IO0SET |= 0xff;
-		CLR_REG_BITS(IO0SET, 0, 7);
 		// Delay of approx 1 second
 		delay();
 		// Clear Port P0.0 - P0.7 as LOW
