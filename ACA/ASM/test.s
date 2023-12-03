@@ -1,0 +1,9 @@
+
+	AREA RESET, CODE, READONLY	
+	ENTRY
+Main
+	LDR R0, =0x10
+	LDR R1, =0x7
+	SUB R2,R0,R1
+	
+	END
