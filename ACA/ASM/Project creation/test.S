@@ -1,0 +1,11 @@
+	AREA mycode,CODE,READONLY
+	ENTRY
+	
+	MOV R0,#100
+	MOV R1,#200
+	ADD R2,R1,R0
+	
+STOP B STOP
+	
+	
+	END
