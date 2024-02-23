@@ -3,7 +3,7 @@
 
 void BubbleSort(int *array, int size)
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
         {
@@ -19,7 +19,7 @@ void BubbleSort(int *array, int size)
 
 void BubbleSortEfficient(int *array, int size)
 {
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size - 1; i++)
     {
         bool swapped = false;
         for (int j = 0; j < size - i - 1; j++)
